@@ -1,0 +1,14 @@
+@import './navbar.css';
+@import './drone.css';
+
+.main {
+  background-image: url('../assets/hero-bg.webp');
+  background-position: 70.3% 0;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.flex-items {
+  display: flex;
+  align-items: center;
+}
