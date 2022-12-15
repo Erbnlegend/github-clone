@@ -1,14 +1,148 @@
 @import './navbar.css';
 @import './drone.css';
+@import './organizations.css';
+@import './lines.css';
+@import './footer.css';
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --subtext-color: rgb(139, 148, 158);
+  --main-purple: rgb(125, 66, 196);
+  --green-text: rgb(126, 231, 135);
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgb(13, 17, 22);
+}
+
+h1 {
+  margin: 0;
+}
 
 .main {
   background-image: url('../assets/hero-bg.webp');
   background-position: 70.3% 0;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .flex-items {
   display: flex;
   align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.padding-small {
+  padding: 25px;
+}
+
+.pull-left {
+  left: -100px;
+}
+
+.goal {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.green-text {
+  color: var(--green-text);
+}
+
+.subText {
+  color: var(--subtext-color);
+}
+
+.subText-lg {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 75px;
+  max-width: 915px;
+  min-width: 450px;
+}
+
+.subText-med {
+  font-size: 1.7rem;
+  color: white;
+  margin-bottom: 75px;
+  max-width: 500px;
+  min-width: 450px;
+}
+
+.subText-alert {
+  font-size: 3.5rem;
+}
+
+.alert-info {
+  font-size: .6rem;
+  border: 2px solid var(--green-text);
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+  width: 100px;
+}
+
+.content-container {
+  display: flex;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: -4px;
+  & .title {
+    position: relative;
+    white-space: nowrap;
+    color: white;
+    font-size: 2.8rem;
+  }
+  & .mission {
+    max-width: 915px;
+    min-width: 450px;
+    font-size: 2rem;
+  }
+  & .hero-signup {
+    display: flex;
+    margin: 60px auto 120px auto;
+    & input {
+      padding: 15px;
+      border: none;
+      outline: none;
+      border-radius: 5px 0 0 5px;
+    }
+    & button {
+      padding: 15px;
+      color: white;
+      border: none;
+      outline: none;
+    }
+    & .email {
+      background-color: var(--main-purple);
+      border-radius: 0 5px 5px 0;
+      color: white;
+    }
+    & .style-line {
+      border-right: 1px solid var(--subtext-color);
+      margin: 0 15px;
+    }
+    & .enterprise {
+      background-color: transparent;
+      border: 2px solid var(--main-purple);
+      border-radius: 5px;
+      padding: 0 25px;
+    }
+  }
 }

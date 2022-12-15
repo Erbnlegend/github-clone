@@ -1,0 +1,6 @@
+.organizations {
+  margin: 15px 0 95px 0;
+  & img {
+    padding-right: 30px;
+  }
+}

@@ -1,13 +1,30 @@
 import React from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import BuildForm from './BuildForm'
+import Organizations from './Organizations'
+import Lines from './Lines'
+import Productivity from './Productivity'
+import Codespaces from './Codespaces'
+import GraphLines from './GraphLines'
+import Footer from './Footer'
 
 const Home = () => {
-  AOS.init()
   return (
     <div>
-      <img className='drone' src='./imgs/hero-drone.webp' />
-      Let&apos;s build from here
+        <div className='content-container'>
+          <Lines />
+          <div className='content'>
+            <BuildForm />
+            <Organizations />
+            <Productivity />
+          </div>
+        </div>
+        <div className='content-container'>
+        <GraphLines />
+        <div className='content'>
+          <Codespaces />
+        </div>
+      </div>
+      <Footer />
     </div>
   )
 }

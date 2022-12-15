@@ -1,0 +1,14 @@
+.footer {
+  background-image: url('../assets/footer-galaxy.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 -350px;
+  height: 600px;
+  & .footer-container {
+    width: 100%;
+  }
+  & .astrocat {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
+}

@@ -24,14 +24,12 @@ const App = () => {
         <Navbar
 
         />
-        <div>
-          <Routes>
-            <Route path='/' element={
-            <Home
+        <Routes>
+          <Route path='/' element={
+          <Home
 
-            />} />
+          />} />
           </Routes>
-        </div>
       </BrowserRouter>
     </div>
   )

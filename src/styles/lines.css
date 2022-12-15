@@ -1,0 +1,60 @@
+.lines {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 8.5%;
+   & .glow-purple {
+    box-shadow: 0 0 30px 15px #dd7df777;
+  }
+  & .glow-green {
+    position: relative;
+    left: -8px;
+    box-shadow: 0 0 30px 15px rgb(43, 74, 52);
+  }
+  & .icon {
+    text-align: center;
+    color: white;
+  }
+  & .glowing-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin: 10px auto;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+  }
+  & .graph-tree {
+    position: relative;
+    left: calc(50% - 14px);
+    width: 450px;
+    height: 650px;
+  }
+  & .graph-branch {
+    position: absolute;
+    top: 225px;
+    left: calc(50% - 2px);
+    height: 400px;
+  }
+}
+
+.gradient-lines-green {
+  background: linear-gradient(#d2a8ff, #a371f7 10%, #196c2e 70%, #2ea043 80%, #56d364);
+  width: 3px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.lines-green {
+  background-color: #56d364;
+  width: 3px;
+  margin: 0 auto;
+}
+.graphLines-green{
+  background-color: #56d364;
+  width: 3px;
+  margin: 0 auto;
+}

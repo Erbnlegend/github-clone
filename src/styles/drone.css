@@ -1,4 +1,15 @@
+.drone-container {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+}
+
 .drone {
-  width: 500px;
-  height: 325px;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 30%;
 }
