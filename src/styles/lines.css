@@ -58,3 +58,22 @@
   width: 3px;
   margin: 0 auto;
 }
+
+
+@media screen and (max-width: 900px) {
+  .lines {
+    width: 6.5%;
+    & .graph-tree {
+      position: relative;
+      left: calc(50% - 10px);
+      width: 350px;
+      height: 525px;
+    }
+    & .graph-branch {
+      position: absolute;
+      top: 125px;
+      left: calc(50% - 2px);
+      height: 400px;
+    }
+  }
+}

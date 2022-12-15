@@ -11,6 +11,9 @@ import './assets/git-branch-productivity.svg'
 import './assets/footer-galaxy.jpg'
 import './assets/astrocat.png'
 import './assets/globe.jpg'
+import './assets/illo-ports.png'
+import './assets/illo-context-menu.png'
+import './assets/illu-projects.png'
 
 // Style imgs
 import './assets/orgs/stripe.svg'

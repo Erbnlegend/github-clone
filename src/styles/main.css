@@ -34,6 +34,15 @@ h1 {
   display: flex;
   align-items: center;
 }
+.flex-items-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-sm {
+  width: 350px;
+}
 
 .relative {
   position: relative;
@@ -45,6 +54,15 @@ h1 {
 
 .pull-left {
   left: -100px;
+}
+.pull-left-sm {
+  left: -100px;
+}
+.pull-up {
+  top: -100px;
+}
+.pull-up-sm {
+  top: -100px;
 }
 
 .goal {
@@ -65,8 +83,8 @@ h1 {
   font-size: 2.5rem;
   color: white;
   margin-bottom: 75px;
-  max-width: 915px;
-  min-width: 450px;
+  max-width: 900px;
+  min-width: 250px;
 }
 
 .subText-med {
@@ -92,6 +110,7 @@ h1 {
 
 .content-container {
   display: flex;
+  min-width: 280px;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -105,14 +124,17 @@ h1 {
   margin-bottom: -4px;
   & .title {
     position: relative;
-    white-space: nowrap;
     color: white;
     font-size: 2.8rem;
   }
-  & .mission {
+  & .subText {
     max-width: 915px;
     min-width: 450px;
     font-size: 2rem;
+  }
+  & .box {
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px #000
   }
   & .hero-signup {
     display: flex;
@@ -145,4 +167,76 @@ h1 {
       padding: 0 25px;
     }
   }
+}
+
+@media screen and (max-width: 900px) {
+  .pull-up-sm {
+    top: 0;
+    margin-top: 25px;
+  }
+  .content.container {
+    min-width: 280px;
+    max-width: 900px;
+  }
+  .pull-left {
+    left: -30px;
+  }
+  .pull-left-sm {
+    left: -30px;
+  }
+  .flex-items {
+    flex-direction: column;
+  }
+  .img-lg {
+    width: 550px;
+  }
+  .info-big {
+    padding-left: 30px;
+  }
+  .img-sm {
+   display: none;
+  }
+  .padding-small {
+    padding: 10px;
+  }
+  .content {
+    & .title {
+      top: 50px;
+      white-space: wrap;
+      font-size: 1.3rem;
+    }
+    & .subText {
+      position: relative;
+      top: 50px;
+      max-width: 915px;
+      min-width: 150px;
+      height: 100px;
+      font-size: 1rem;
+    }
+    & .hero-signup {
+      display: block;
+      margin: 60px auto 60px 60px;
+      flex-direction: column;
+      & input {
+        padding: 15px;
+        border-radius: 5px;
+      }
+      & button {
+        padding: 15px;
+      }
+      & .email {
+        border-radius: 5px;
+      }
+      & .style-line {
+        display: none;
+      }
+      & .enterprise {
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: 15px;
+        width: 425px;
+      }
+    }
+  }
+  
 }

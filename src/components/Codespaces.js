@@ -61,12 +61,17 @@ const Codespaces = () => {
 
   return (
     <div>
+      <div ref={codeSpaces} />
       <animated.div className='relative' style={rightTransition}>
-        <div className='subText-med padding-small'>
-          <span className='green-text'>Codespaces.</span> offers a complete dev environment in seconds, so you can code, build, test, and open pull requests from any repo anywhere.
+        <div className='flex-items relative'>
+          <div className='subText-med padding-small'>
+            <span className='green-text'>Codespaces.</span> offers a complete dev environment in seconds, so you can code, build, test, and open pull requests from any repo anywhere.
+          </div>
+          <img className='img-sm box' src='./imgs/illo-ports.png' />
+          <img className='img-sm pull-left pull-up relative box' src='./imgs/illo-context-menu.png' />
         </div>
       </animated.div>
-      <div ref={codeSpaces} />
+      <div ref={triggerRef} />
       <animated.div className='padding-small relative' style={opacity}>
         <div className='info-big'>
           <div className='alert-info green-text'>Did you know?</div>
@@ -74,7 +79,7 @@ const Codespaces = () => {
           <div className='subText-med'>in developer productivity after three years with Github</div>
         </div>
       </animated.div>
-      <div ref={triggerRef} />
+      <img className='box pull-left-sm relative img-lg' src='./imgs/illu-projects.png' />
     </div>
   )
 }

@@ -55,7 +55,7 @@ const Productivity = () => {
       </animated.div>
       <div ref={triggerRef} />
       <div className='pull-left relative'>
-        <img src='./imgs/issues-plan.png' />
+        <img className='box img-lg' src='./imgs/issues-plan.png' />
       </div>
     </div>
   )

@@ -2,7 +2,7 @@
   background-image: url('../assets/footer-galaxy.jpg');
   background-repeat: no-repeat;
   background-position: 0 -350px;
-  height: 600px;
+  margin-top: 125px;
   & .footer-container {
     width: 100%;
   }
@@ -10,5 +10,98 @@
     display: block;
     width: 400px;
     margin: 0 auto;
+  }
+  & .title {
+    text-align: center;
+    font-weight: bolder;
+    margin: 0 auto;
+    max-width: 750px;
+    min-width: 450px;
+    font-size: 3.2rem;
+  }
+  & .subText {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 450px;
+    font-size: 1.3rem;
+  }
+  & .hero-signup {
+    display: flex;
+    margin: 60px auto 120px auto;
+    max-width: 800px;
+    min-width: 450px;
+    & input {
+      padding: 15px;
+      border: none;
+      outline: none;
+      border-radius: 5px 0 0 5px;
+    }
+    & button {
+      padding: 15px;
+      color: white;
+      border: none;
+      outline: none;
+    }
+    & .email {
+      background-color: var(--main-purple);
+      border-radius: 0 5px 5px 0;
+      color: white;
+    }
+    & .style-line {
+      border-right: 1px solid var(--subtext-color);
+      margin: 0 15px;
+    }
+    & .enterprise {
+      background-color: transparent;
+      border: 2px solid var(--main-purple);
+      border-radius: 5px;
+      padding: 0 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    margin-top: 25px;
+    & .footer-container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    & .astrocat {
+      width: 300px;
+    }
+    & .title {
+      font-size: 2rem;
+    }
+    & .subText {
+      font-size: 1rem;
+    }
+    & .hero-signup {
+      flex-direction: column;
+      margin: 60px auto 60px auto;
+
+      & input {
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+      }
+      & button {
+        padding: 15px;
+      }
+      & .email {
+        border-radius: 5px;
+        color: white;
+      }
+      & .style-line {
+        display: none;
+      }
+      & .enterprise {
+        border-radius: 5px;
+        margin-top: 15px;
+        padding: 15px;
+      }
+    }
   }
 }
