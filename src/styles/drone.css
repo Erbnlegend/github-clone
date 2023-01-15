@@ -17,12 +17,11 @@
 @media screen and (max-width: 900px) {
   .drone-container {
     display: block;
-    width: 80%;
-    margin: 0 auto;
-    height: 250px;
+    width: 40%;
+    height: 200px;
   }
   .drone {
     right: 0;
-    width: 40%;
+    width: 80%;
   }
 }

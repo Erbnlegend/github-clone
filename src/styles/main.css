@@ -4,15 +4,14 @@
 @import './lines.css';
 @import './footer.css';
 
-
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --subtext-color: rgb(139, 148, 158);
   --main-purple: rgb(125, 66, 196);
   --green-text: rgb(126, 231, 135);
+}
+
+* {
+  white-space: normal;
 }
 
 body {
@@ -28,6 +27,7 @@ h1 {
   background-image: url('../assets/hero-bg.webp');
   background-position: 70.3% 0;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .flex-items {
@@ -41,7 +41,7 @@ h1 {
 }
 
 .img-sm {
-  width: 350px;
+  max-width: 350px;
 }
 
 .relative {
@@ -84,7 +84,6 @@ h1 {
   color: white;
   margin-bottom: 75px;
   max-width: 900px;
-  min-width: 250px;
 }
 
 .subText-med {
@@ -92,7 +91,6 @@ h1 {
   color: white;
   margin-bottom: 75px;
   max-width: 500px;
-  min-width: 450px;
 }
 
 .subText-alert {
@@ -105,12 +103,11 @@ h1 {
   border-radius: 5px;
   padding: 2px;
   text-align: center;
-  width: 100px;
+  max-width: 100px;
 }
 
 .content-container {
   display: flex;
-  min-width: 280px;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -122,6 +119,7 @@ h1 {
   flex-direction: column;
   margin-top: 25px;
   margin-bottom: -4px;
+  max-width: 100%;
   & .title {
     position: relative;
     color: white;
@@ -129,7 +127,6 @@ h1 {
   }
   & .subText {
     max-width: 915px;
-    min-width: 450px;
     font-size: 2rem;
   }
   & .box {
@@ -139,6 +136,7 @@ h1 {
   & .hero-signup {
     display: flex;
     margin: 60px auto 120px auto;
+    max-width: 900px;
     & input {
       padding: 15px;
       border: none;
@@ -170,25 +168,33 @@ h1 {
 }
 
 @media screen and (max-width: 900px) {
+  .subText-lg {
+    font-size: 2rem;
+  }
+  .goal {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
   .pull-up-sm {
     top: 0;
     margin-top: 25px;
   }
   .content.container {
-    min-width: 280px;
     max-width: 900px;
   }
   .pull-left {
-    left: -30px;
+    left: 0;
   }
   .pull-left-sm {
-    left: -30px;
+    left: 0px;
   }
   .flex-items {
     flex-direction: column;
+    justify-content: center;
   }
   .img-lg {
-    width: 550px;
+    max-width: 350px;
   }
   .info-big {
     padding-left: 30px;
@@ -202,14 +208,12 @@ h1 {
   .content {
     & .title {
       top: 50px;
-      white-space: wrap;
       font-size: 1.3rem;
     }
     & .subText {
       position: relative;
       top: 50px;
       max-width: 915px;
-      min-width: 150px;
       height: 100px;
       font-size: 1rem;
     }
@@ -217,15 +221,22 @@ h1 {
       display: block;
       margin: 60px auto 60px 60px;
       flex-direction: column;
+      width: 300px;
       & input {
         padding: 15px;
+        width: 80%;
         border-radius: 5px;
       }
       & button {
         padding: 15px;
+        width: 90%;
       }
       & .email {
         border-radius: 5px;
+        margin-bottom: 15px;
+        max-width: 915px;
+        width: 90%;
+
       }
       & .style-line {
         display: none;
@@ -234,7 +245,7 @@ h1 {
         border-radius: 5px;
         margin: 0 auto;
         padding: 15px;
-        width: 425px;
+        max-width: 425px;
       }
     }
   }

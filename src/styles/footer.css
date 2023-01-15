@@ -4,11 +4,11 @@
   background-position: 0 -350px;
   margin-top: 125px;
   & .footer-container {
-    width: 100%;
+    max-width: 100%;
   }
   & .astrocat {
     display: block;
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
   }
   & .title {
@@ -16,21 +16,18 @@
     font-weight: bolder;
     margin: 0 auto;
     max-width: 750px;
-    min-width: 450px;
     font-size: 3.2rem;
   }
   & .subText {
     text-align: center;
     margin: 0 auto;
     max-width: 800px;
-    min-width: 450px;
     font-size: 1.3rem;
   }
   & .hero-signup {
     display: flex;
     margin: 60px auto 120px auto;
     max-width: 800px;
-    min-width: 450px;
     & input {
       padding: 15px;
       border: none;
@@ -65,11 +62,11 @@
   .footer {
     margin-top: 25px;
     & .footer-container {
-      width: 90%;
+      max-width: 90%;
       margin: 0 auto;
     }
     & .astrocat {
-      width: 300px;
+      max-width: 300px;
     }
     & .title {
       font-size: 2rem;
@@ -80,19 +77,15 @@
     & .hero-signup {
       flex-direction: column;
       margin: 60px auto 60px auto;
-
+      width: 300px;
       & input {
-        padding: 15px;
-        border: none;
-        outline: none;
-        border-radius: 5px;
+        width: 100%;
       }
       & button {
-        padding: 15px;
+        width: 100%;
       }
       & .email {
-        border-radius: 5px;
-        color: white;
+        width: 100%;
       }
       & .style-line {
         display: none;

@@ -18,6 +18,7 @@ const App = () => {
     document.body.className = theme
   }, [theme])
 
+  const path = process.env.NODE_ENV === 'development' ? '/' : '/projects/githubClone'
   return (
     <div className={`main ${theme}`}>
       <BrowserRouter>
@@ -25,7 +26,7 @@ const App = () => {
 
         />
         <Routes>
-          <Route path='/' element={
+          <Route path={ path } element={
           <Home
 
           />} />
